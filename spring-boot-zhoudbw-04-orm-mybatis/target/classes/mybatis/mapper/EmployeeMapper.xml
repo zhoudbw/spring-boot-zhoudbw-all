@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--该文件本质就是ＳＱＬ的执行文件-->
+
+<!--namespace指定哪个实体类找到这个xml文件-->
+<mapper namespace="cn.zhoudbw.mapper.EmployeeMapper">
+
+    <!--id对应SQL语句对应的mapper中的方法-->
+    <!--resultType指定该方法执行之后的返回结果类型-->
+    <!--当调用mapper中的方法是，会根据这个mapper文件，映射方法，从而执行得到最终的结果-->
+    <!--也就是这个mapper文件会映射到cn.zhoudbw.mapper.EmployeeMapper类-->
+    <select id="employeeList" resultType="cn.zhoudbw.model.Employee">
+        <!--该方法需要的SQL-->
+        SELECT id, name, job, birthday, sex FROM employee
+    </select>
+
+</mapper>

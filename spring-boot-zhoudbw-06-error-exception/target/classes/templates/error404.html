@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <!-- customizer的404页面 -->
+    <title>404</title>
+</head>
+<body>
+<div align="center">
+    这里是 src/resources/templates/error404.html
+</div>
+<br>
+<div align="center">
+    <!-- 拿到错误页的时间戳 -->
+    <p th:text="${timestamp}">timestamp</p>
+    <!-- 状态码 -->
+    <p th:text="${status}">status</p>
+    <!-- 错误信息 -->
+    <p th:text="${message}">message</p>
+</div>
+<br>
+<div align="center">
+    现在找不到页面了
+</div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!--引入对thymeleaf的引用-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎👏🏻</title>
+    <!--引入JQuery-->
+    <script src="webjars/jquery/3.4.1/jquery.min.js"></script>
+    <!--我们将要使用的JavaScript模块-->
+    <script type="text/javascript">
+        // name将会被 Hello CLI替换，那么我们对其做一点动画效果
+        $(document).ready(function() {
+            // 拿到p元素，增加慢放的动画
+            $('p').animate({
+                // 设置字体大小
+                fontSize: '50px'
+            }, 'slow'); // slow 慢放
+        });
+    </script>
+</head>
+<body>
+<p th:text="${name}">名字</p>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http:www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>录入员工</title>
+    <!--引入/src/resources/static下的css资源-->
+    <link rel="stylesheet" th:href="@{/bootstrap.css}">
+
+</head>
+<body class="container">
+<h3>录入员工信息</h3>
+<br/>
+
+<!--使用POST发送请求，接口为/employee，表示新增一个Employee资源-->
+<form th:action="@{/employee}" method="post" class="form-horizontal"><!--美化表单，先设置水平-->
+    <!--为了更好的接收input内的值，我们添加name属性-->
+    <!--add请求，需要的参数是一个Employee对象，我们填的这些值，实际上是要被组装成Employee对象的-->
+    <!--所以，我们添加name属性，这样就可以对应Employee的属性名，组成一个完整的Employee对象了。-->
+
+    <div class="form-group"><!--表单基础样式-->
+        <label class="col-sm-2 control-label">名字:</label>
+        <div class="col-sm-5"><!--设置宽度-->
+            <input type="text" id="name" name="name">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">职业:</label>
+        <div class="col-sm-5">
+            <input type="text" id="job" name="job">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">生日</label>
+        <div class="col-sm-5">
+            <input type="text" id="birthday" name="birthday">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">性别</label>
+        <div class="col-sm-5">
+            <input type="text" id="sex" name="sex">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-5 col-sm-offset-2"><!--添加宽度和偏移量-->
+            <input type="submit" value="submit">
+        </div>
+    </div>
+</form>
+</body>
+</html>

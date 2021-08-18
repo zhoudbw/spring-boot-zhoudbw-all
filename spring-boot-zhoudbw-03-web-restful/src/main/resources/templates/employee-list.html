@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>人员列表-首页</title>
+    <!--引入/src/resources/static下的css资源-->
+    <link rel="stylesheet" th:href="@{/bootstrap.css}">
+</head>
+<body class="container">
+<h2>呆小甜公司员工列表</h2><br/>
+<table class="table table-hover"><!--添加悬停样式-->
+    <!--    表头-->
+    <thead>
+    <tr>
+        <th>名字</th>
+        <th>职位</th>
+        <th>生日</th>
+        <th>性别</th>
+    </tr>
+    </thead>
+    <!--    显示每个员工的具体信息-->
+    <tbody>
+    <!--这里需要遍历每个人员的名字、职位、生日、性别-->
+    <!--通过each进行遍历，下面的含义是：获得employee对象,该对象来最传递过来的 employList-->
+    <tr th:each="employee:${employeeList}">
+        <!--拿到一个具体的对象后，就相当于拿到一行具体的数据了，开始赋值-->
+        <!--分别给，静态和动态的值. 执行时，有动态值动态值替换，没有动态值显示静态值-->
+        <td th:text="${employee.name}">name</td>
+        <td th:text="${employee.job}">job</td>
+        <td th:text="${employee.birthday}">birthday</td>
+        <td th:text="${employee.sex}">sex</td>
+        <!--增加update按钮-->
+        <td class="col-sm-2">
+            <!-- 传统API -->
+            <!-- <a th:href="@{/employee/toupdate(name=${employee.name})}" class="btn btn-info">update</a> -->
+            <!-- 带有参数时，需要对API进行修改，请求和参数分开，并且请求名的前后 / 不可以少  -->
+            <a th:href="@{/employee/toupdate/} + ${employee.name}" class="btn btn-info">update</a>
+        </td>
+
+
+        <!--增加delete按钮-->
+        <td class="col-sm-2">
+            <!-- 传统API -->
+            <!-- <a th:href="@{/employee/delete(name=${employee.name})}" class="btn btn-info">delete</a> -->
+            <!-- 为了将从将传统API改成RESTfulAPI，需要将a链接的GET请求，改成DELETE方法发送的请求 -->
+            <!-- 借助button来实现，通过添加点击事件，来发送DELETE请求 -->
+            <button th:attr="del_url=@{/employee/} + ${employee.name}" name="del_button">DELETE</button>
+            <!--使用attr添加属性del_url-->
+            <!--添加点击监听时间，来发送DELETE请求-->
+            <!--// 我们需要引入JQuery相关的包。springboot给我们提供了一种静态资源的使用方式，webjars.-->
+            <!--
+                /**
+                 * 概念
+                 *    WebJars是将web前端资源（js，css等）打成jar包文件，然后借助Maven工具，以jar包形式对web前端资源进行统一依赖管理，
+                 *    保证这些Web资源版本唯一性。WebJars的jar包部署在Maven中央仓库上。
+                 *
+                 * 优势
+                 *    将静态资源版本化，更利于升级和维护。
+                 *    剥离静态资源，提高编译速度和打包效率。
+                 *    实现资源共享，有利于统一前端开发。
+                 *
+                 * 使用方式 引入依赖 - > 直接访问
+                 *     <link rel='stylesheet' href='webjars/bootstrap/3.3.6/css/bootstrap.min.css'>
+                 *                                  webjars/对应的项目名/对应的版本号/类型/文件名字
+                 *     <script type='text/javascript' src='webjars/bootstrap/3.3.6/js/bootstrap.min.js'></script >
+                 */
+            -->
+            <script type="text/javascript" th:src="@{/webjars/jquery/3.4.1/jquery.js}"></script><!--引入JQuery-->
+            <script>
+                //监听按钮点击，如果点击了，我们就将del_url的请求，以DELETE方法提交(借助表单)
+                $(function () {
+                    // 找到del_button按钮，添加点击事件
+                    $("button[name='del_button']").click(function () {
+                        //整合<button>和<form>,想要实现的效果是，将我在<button>中设置的del_url属性，赋值给<form>的action属性
+                        //也就是<form action=del_url> 其中，del_url=@{/employee/} + ${employee.name}
+                        //这样提交这个表单，提交的就是以DELETE方式提交的del_url请求
+                        $("#del_form").prop("action", $(this).attr("del_url")).submit();//找到del_form,设置其action为button的del_url属性,并提交
+                                                                                        //this,这里指的就是<button>
+                    })
+                })
+            </script>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<!--===============================================================-->
+<!--删除按钮需要以DELETE方式提交，需要借助表单，这个表单是删除按钮借助的表单-->
+<form method="post" id="del_form">
+    <input type="hidden" name="_method" value="delete">
+</form>
+
+<!--添加员工的按钮-->
+<div class="form-group"><!--给"add"一个表单的标准样式-->
+    <div class="col-sm-2 control-label">
+        <a href="/employee/toadd" th:href="@{/employee/toadd}"
+           class="btn btn-info">add</a>
+    </div>
+</div>
+</body>
+</html>

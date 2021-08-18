@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<!--引入xmlns:th="http://www.thymeleaf.org"，获取Thymeleaf相关的提示-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <!--变量表达式-->
+    student:
+    <span th:text="${student.name}">name</span>
+    <span th:text="${student.grade}">grade</span>
+    <span th:text="${student.getSex()}">sex</span>
+</body>
+</html>

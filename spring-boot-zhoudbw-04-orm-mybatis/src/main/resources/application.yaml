@@ -1,0 +1,65 @@
+# 数据库连接配置
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/springdemo?useSSL=false
+    username: root
+    password: zhoudbw_tian
+    # 可以不配置，能够根据url默认识别
+    driver-class-name: com.mysql.jdbc.Driver
+
+  # 选择使用哪种配置环境进行mybatis和springboot的整合
+  profiles:
+    active: no
+
+
+## * 使用mybatis集成springboot是需要的配置
+
+---
+# ** 方式一：mybatis-cn.zhoudbw.config.xml 和 EmployeeMapper.xml 都配置
+spring:
+  profiles: 2xml
+
+server:
+  port: 8020
+
+mybatis:
+  # 配置mybatis的xml配置文件的位置
+  # mybatis.cn.zhoudbw.config-location=classpath:mybatis-cn.zhoudbw.config.xml
+  config-location: classpath:mybatis-cn.zhoudbw.config.xml # 这么写，需要将配置文件放在src/resources目录下
+
+---
+# ** 方式二：将mybatis-cn.zhoudbw.config.xml内的配置放在application.yaml中配置
+spring:
+  profiles: 1xml
+
+server:
+  port: 8010
+
+mybatis:
+  # mybatis.mapper-locations=classpath*:/mappers/*.xml 声明实体类对应的mapper的xml文件所在位置
+  mapper-locations: classpath*:/mybatis/mapper/*.xml
+  # mybatis.type-aliases-package=sample.mybatis.domain 声明实体类所在的位置
+  type-aliases-package: cn.zhoudbw.model
+
+---
+
+# ** 方式三：完全注解的方式，没有xml文件
+spring:
+  profiles: 0xml
+server:
+  port: 8000
+
+# mybatis-cn.zhoudbw.config.xml里面的配置我们也不想要在application.yaml中配置了，
+
+# 但是我们需要找到mapper层，且得有对应的映射文件处理，怎么办呢？
+# 这个的实现可以通过@Mapper指定接口，那么这个接口就可以被找到了，
+# 通过注解@Select("sql"),放置在方法上方，这样就能够对应相应的mapper层方法对应的sql语句了。
+
+---
+# ** 这个环境是没有任何配置的时候使用的
+spring:
+  profiles: no
+server:
+  port: 8080
+
+---

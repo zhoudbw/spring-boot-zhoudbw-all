@@ -1,0 +1,11 @@
+2021/08/17-12:39:43 [main] INFO  cn.zhoudbw.SpringBootZhoudbw06LoggingApplication- Starting SpringBootZhoudbw06LoggingApplication on zhoudbw with PID 9425 (/Users/zhoudw/Desktop/spring-boot-demo/spring-boot-zhoudbw-06-logging/target/classes started by zhoudw in /Users/zhoudw/Desktop/spring-boot-demo)
+2021/08/17-12:39:43 [main] INFO  cn.zhoudbw.SpringBootZhoudbw06LoggingApplication- No active profile set, falling back to default profiles: default
+2021/08/17-12:39:44 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat initialized with port(s): 8080 (http)
+2021/08/17-12:39:44 [main] INFO  org.apache.catalina.core.StandardService- Starting service [Tomcat]
+2021/08/17-12:39:44 [main] INFO  org.apache.catalina.core.StandardEngine- Starting Servlet engine: [Apache Tomcat/9.0.24]
+2021/08/17-12:39:44 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]- Initializing Spring embedded WebApplicationContext
+2021/08/17-12:39:44 [main] INFO  org.springframework.web.context.ContextLoader- Root WebApplicationContext: initialization completed in 1419 ms
+2021/08/17-12:39:44 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Initializing ExecutorService 'applicationTaskExecutor'
+2021/08/17-12:39:45 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer- Tomcat started on port(s): 8080 (http) with context path ''
+2021/08/17-12:39:45 [main] INFO  cn.zhoudbw.SpringBootZhoudbw06LoggingApplication- Started SpringBootZhoudbw06LoggingApplication in 2.42 seconds (JVM running for 3.279)
+2021/08/17-13:03:43 [Thread-8] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor- Shutting down ExecutorService 'applicationTaskExecutor'

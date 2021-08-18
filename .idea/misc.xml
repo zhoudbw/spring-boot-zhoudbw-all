@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/spring-boot-zhoudbw-05-web-war" />
+  </component>
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="ES6" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/spring-boot-zhoudbw-01-helloworld/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-zhoudbw-02-configuration/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-zhoudbw-03-template/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-zhoudbw-03-thymeleaf-crud/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-zhoudbw-03-web-restful/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-zhoudbw-04-orm-jpa/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-zhoudbw-04-orm-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-zhoudbw-04-orm-mybatis-plus/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-zhoudbw-05-event-listener/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-zhoudbw-05-web-container/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-zhoudbw-05-web-war/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-zhoudbw-06-error-exception/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-zhoudbw-06-logging/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-zhoudbw-06-servlet/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-zhoudbw-06-swagger/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>

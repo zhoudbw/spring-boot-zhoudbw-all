@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>人员列表-首页</title>
+    <!--引入/src/resources/static下的css资源-->
+    <link rel="stylesheet" th:href="@{/css/bootstrap.css}">
+</head>
+<body class="container">
+<h2>呆小甜公司员工列表</h2><br/>
+<table class="table table-hover"><!--添加悬停样式-->
+    <!--    表头-->
+    <thead>
+    <tr>
+        <th>名字</th>
+        <th>职位</th>
+        <th>生日</th>
+        <th>性别</th>
+    </tr>
+    </thead>
+    <!--    显示每个员工的具体信息-->
+    <tbody>
+    <!--这里需要遍历每个人员的名字、职位、生日、性别-->
+    <!--通过each进行遍历，下面的含义是：获得employee对象,该对象来最传递过来的 employList-->
+    <tr th:each="employee:${employeeList}">
+        <!--拿到一个具体的对象后，就相当于拿到一行具体的数据了，开始赋值-->
+        <!--分别给，静态和动态的值. 执行时，有动态值动态值替换，没有动态值显示静态值-->
+        <td th:text="${employee.name}">name</td>
+        <td th:text="${employee.job}">job</td>
+        <td th:text="${employee.birthday}">birthday</td>
+        <td th:text="${employee.sex}">sex</td>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

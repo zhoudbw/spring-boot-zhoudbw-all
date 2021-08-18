@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<!--引入xmlns:th="http://www.thymeleaf.org"，获取Thymeleaf相关的提示-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<!--我们可以看到，标签内已经默认有一个name，只不过是th:text=${name}多了一个动态的值-->
+<!--当获取到动态的值，会将静态的值替换掉，也就是：-->
+<!--把 name 的值显示在当前 p里，用的是th开头的属性: th:text, 而取值用的是 "${name}" 这种写法叫做 ognl。
+通过这种方式取出来动态值，放进p 里，从而替换到 原来p 标签里的 4个字符 "name"-->
+<p th:text="${name}">name</p>
+<p th:utext="${name}">name</p>
+</body>
+</html>

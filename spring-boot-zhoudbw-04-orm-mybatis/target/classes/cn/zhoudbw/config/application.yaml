@@ -1,0 +1,19 @@
+server:
+  port: 8090
+
+# 数据库连接配置
+spring:
+  datasource:
+    db1:
+      jdbc-url: jdbc:mysql://localhost:3306/springdemo?useSSL=false
+      username: root
+      password: zhoudbw_tian
+      # 可以不配置，能够根据url默认识别
+      driver-class-name: com.mysql.jdbc.Driver
+
+    db2:
+      jdbc-url: jdbc:mysql://localhost:3306/bak_springdemo?useSSL=false
+      username: root
+      password: zhoudbw_tian
+      # 可以不配置，能够根据url默认识别
+      driver-class-name: com.mysql.jdbc.Driver

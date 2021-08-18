@@ -1,0 +1,52 @@
+{
+  "groups": [
+    {
+      "name": "food",
+      "type": "cn.zhoudbw.config.FoodConfig",
+      "sourceType": "cn.zhoudbw.config.FoodConfig"
+    },
+    {
+      "name": "person",
+      "type": "cn.zhoudbw.config.PersonConfig",
+      "sourceType": "cn.zhoudbw.config.PersonConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "food.eggplant",
+      "type": "java.lang.String",
+      "sourceType": "cn.zhoudbw.config.FoodConfig"
+    },
+    {
+      "name": "food.green-pepper",
+      "type": "java.lang.String",
+      "sourceType": "cn.zhoudbw.config.FoodConfig"
+    },
+    {
+      "name": "food.potato",
+      "type": "java.lang.String",
+      "sourceType": "cn.zhoudbw.config.FoodConfig"
+    },
+    {
+      "name": "person.birthday",
+      "type": "java.lang.String",
+      "sourceType": "cn.zhoudbw.config.PersonConfig"
+    },
+    {
+      "name": "person.name",
+      "type": "java.lang.String",
+      "sourceType": "cn.zhoudbw.config.PersonConfig"
+    },
+    {
+      "name": "person.quality",
+      "type": "java.lang.String",
+      "sourceType": "cn.zhoudbw.config.PersonConfig"
+    },
+    {
+      "name": "person.sex",
+      "type": "java.lang.String",
+      "sourceType": "cn.zhoudbw.config.PersonConfig"
+    }
+  ],
+  "hints": []
+}

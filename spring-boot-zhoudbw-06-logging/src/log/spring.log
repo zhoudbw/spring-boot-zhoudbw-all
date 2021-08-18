@@ -1,0 +1,33 @@
+2021-08-17 11:04:51.299  INFO 9130 --- [main] .z.SpringBootZhoudbw06LoggingApplication : Starting SpringBootZhoudbw06LoggingApplication on zhoudbw with PID 9130 (/Users/zhoudw/Desktop/spring-boot-demo/spring-boot-zhoudbw-06-logging/target/classes started by zhoudw in /Users/zhoudw/Desktop/spring-boot-demo)
+2021-08-17 11:04:51.301  INFO 9130 --- [main] .z.SpringBootZhoudbw06LoggingApplication : No active profile set, falling back to default profiles: default
+2021-08-17 11:04:52.507  INFO 9130 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-17 11:04:52.559  INFO 9130 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-17 11:04:52.559  INFO 9130 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2021-08-17 11:04:53.213  INFO 9130 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-17 11:04:53.214  INFO 9130 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1859 ms
+2021-08-17 11:04:53.379  INFO 9130 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-17 11:04:53.555  INFO 9130 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-17 11:04:53.564  INFO 9130 --- [main] .z.SpringBootZhoudbw06LoggingApplication : Started SpringBootZhoudbw06LoggingApplication in 2.814 seconds (JVM running for 3.816)
+2021-08-17 11:39:44.222  INFO 9130 --- [Thread-8] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-17 11:39:51.012  INFO 9187 --- [main] .z.SpringBootZhoudbw06LoggingApplication : Starting SpringBootZhoudbw06LoggingApplication on zhoudbw with PID 9187 (/Users/zhoudw/Desktop/spring-boot-demo/spring-boot-zhoudbw-06-logging/target/classes started by zhoudw in /Users/zhoudw/Desktop/spring-boot-demo)
+2021-08-17 11:39:51.014  INFO 9187 --- [main] .z.SpringBootZhoudbw06LoggingApplication : No active profile set, falling back to default profiles: default
+2021-08-17 11:39:52.062  INFO 9187 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-17 11:39:52.097  INFO 9187 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-17 11:39:52.097  INFO 9187 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2021-08-17 11:39:53.208  INFO 9187 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-17 11:39:53.208  INFO 9187 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2139 ms
+2021-08-17 11:39:53.349  INFO 9187 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-17 11:39:53.496  INFO 9187 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-17 11:39:53.499  INFO 9187 --- [main] .z.SpringBootZhoudbw06LoggingApplication : Started SpringBootZhoudbw06LoggingApplication in 2.97 seconds (JVM running for 3.592)
+2021-08-17 11:42:15.520  INFO 9187 --- [Thread-7] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-08-17 11:42:17.549  INFO 9196 --- [main] .z.SpringBootZhoudbw06LoggingApplication : Starting SpringBootZhoudbw06LoggingApplication on zhoudbw with PID 9196 (/Users/zhoudw/Desktop/spring-boot-demo/spring-boot-zhoudbw-06-logging/target/classes started by zhoudw in /Users/zhoudw/Desktop/spring-boot-demo)
+2021-08-17 11:42:17.551  INFO 9196 --- [main] .z.SpringBootZhoudbw06LoggingApplication : No active profile set, falling back to default profiles: default
+2021-08-17 11:42:19.021  INFO 9196 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-17 11:42:19.079  INFO 9196 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-17 11:42:19.080  INFO 9196 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2021-08-17 11:42:19.207  INFO 9196 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-17 11:42:19.207  INFO 9196 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1540 ms
+2021-08-17 11:42:19.503  INFO 9196 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-08-17 11:42:19.844  INFO 9196 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-17 11:42:19.848  INFO 9196 --- [main] .z.SpringBootZhoudbw06LoggingApplication : Started SpringBootZhoudbw06LoggingApplication in 2.737 seconds (JVM running for 3.511)
+2021-08-17 11:43:37.204  INFO 9196 --- [Thread-7] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

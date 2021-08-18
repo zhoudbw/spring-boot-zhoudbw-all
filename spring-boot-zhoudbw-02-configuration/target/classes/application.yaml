@@ -1,0 +1,45 @@
+#server:
+#  port: 8090
+
+# 想要使用，必须在配置文件中设置盐，加密的盐和解密的盐一致，才能解密
+jasypt:
+  encryptor:
+    password: 123456!@#
+# 设置需要解密的用户名密文和密码密文
+# 使用ENC()进行解密
+info:
+  username: ENC(NhJkpWunKp5WCmeu+FiIbw==)
+  password: ENC(Bi4curAkr4/kXEQsStC1mA==)
+
+
+person:
+  name: 甜
+  birthday: 02-10
+  sex: 女
+  quality: 呆呆
+
+
+#使用流式语法，改写上述person
+#person: {name: 甜, birthday: 02-10, sex: 女, quality: 呆呆}
+
+
+# 通过spring.profiles.active 选择需要激活的配置
+spring:
+  profiles:
+    active: dev
+
+
+# 通过选择不同的yaml，来选择不同的端口，演示多环境使用
+---
+# 开发环境
+spring:
+  profiles: dev
+server:
+  port: 8090
+
+---
+# 生产环境
+spring:
+  profiles: prod
+server:
+  port: 8010

@@ -1,0 +1,13 @@
+# 数据库连接配置
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/springdemo?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: zhoudbw_tian
+    # 可以不配置，能够根据url默认识别
+    driver-class-name: com.mysql.jdbc.Driver
+  thymeleaf:
+    encoding: utf-8
+server:
+  port: 8090
+

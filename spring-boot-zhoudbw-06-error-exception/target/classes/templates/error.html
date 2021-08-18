@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <!-- 处理特定异常返回的页面 -->
+    <title>ERROR</title>
+</head>
+<body>
+<div align="center">
+    这里是 src/resources/templates/error.html
+</div>
+<br>
+<div align="center">
+    现在出现异常了
+</div>
+<!-- 显示接收到的异常信息 -->
+<div align="center" th:text="${message}">异常信息</div>
+</body>
+</html>

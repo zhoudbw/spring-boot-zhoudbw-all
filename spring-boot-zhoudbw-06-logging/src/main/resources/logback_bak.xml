@@ -1,0 +1,32 @@
+<!--logback的配置，随用随查-->
+<configuration>
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!--配置为test.log时，直接在当前目录下生成个test.log
+        若要在指定目录下打印一个test.log文件 指定目录时必须是绝对路径-->
+        <file>/Users/zhoudw/Desktop/spring-boot-demo/spring-boot-zhoudbw-06-logging/src/log/test.log</file>
+
+        <!--滚动式处理-->
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <fileNamePattern>tests.%i.log.zip</fileNamePattern>
+            <minIndex>1</minIndex>
+            <maxIndex>3</maxIndex>
+        </rollingPolicy>
+
+        <!--触发-->
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <!--当日志文件到达5MB时，生成一个新的文件-->
+            <maxFileSize>5MB</maxFileSize>
+        </triggeringPolicy>
+        <encoder>
+            <!--日志格式使用如下格式
+            PID 进程名 日志级别 打印日志的类 日志信息-->
+            <pattern>%-4relative [%thread] %-5level %logger{35} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!--日志级别是DEBUG-->
+    <root level="DEBUG">
+        <!--关联上方的name=FILE的appender-->
+        <appender-ref  ref="FILE"/>
+    </root>
+</configuration>

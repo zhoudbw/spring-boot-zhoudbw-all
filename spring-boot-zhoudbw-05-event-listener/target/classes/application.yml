@@ -1,0 +1,7 @@
+server:
+  port: 8090
+
+# 配置需要加载的监听器
+context:
+  listener:
+    classes: cn.zhoudbw.listener.CustomListener4

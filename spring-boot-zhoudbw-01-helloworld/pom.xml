@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>cn.zhoudbw</groupId>
+    <artifactId>spring-boot-zhoudbw-01-helloworld</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <!--超级父pom，是springboot的父依赖
+    帮我们集成了很多子依赖，而且声明了版本号
+    引入这个父pom，也标志着我们要创建一个SpringBoot的项目-->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.8.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <dependencies>
+
+        <!--创建SpringBoot的web项目所需的依赖
+        明显，缺少version这项，是因为版本号已经在parent里面声明过了-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!--SpringBoot热部署工具的依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+
+
+    </dependencies>
+
+    <!--引入一个可以将项目打包可执行jar的插件
+    引入之后，可以看到Plugins多了个插件——spring-boot-->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

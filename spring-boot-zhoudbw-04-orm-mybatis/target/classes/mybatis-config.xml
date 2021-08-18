@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-cn.zhoudbw.config.dtd">
+
+<configuration>
+
+    <!--实体类的位置-->
+    <typeAliases>
+        <package name="cn.zhoudbw.model"/>
+    </typeAliases>
+
+    <!--实体类对应的mapper的位置-->
+    <mappers>
+        <!--这种路径写法需要在src/resource目录下创建相应的文件-->
+        <mapper resource="mybatis/mapper/EmployeeMapper.xml" />
+    </mappers>
+</configuration>

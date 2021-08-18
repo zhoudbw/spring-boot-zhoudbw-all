@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<!--引入xmlns:th="http://www.thymeleaf.org"，获取Thymeleaf相关的提示-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<!--链接URL表达式-->
+<!--对点击welcome you的时候，跳转到@{welcome}表示的welcome请求，而不是 123 请求-->
+<a href="/123" th:href="@{/welcome}">welcome you</a>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http:www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>修改员工</title>
+    <!--引入/src/resources/static下的css资源-->
+    <link rel="stylesheet" th:href="@{/bootstrap.css}">
+
+</head>
+<body class="container">
+<h3>修改员工信息</h3>
+<br/>
+
+<!--form表单只支持get和post两种方式，当时现在我们我们想要发送PUT请求的/employee, 通过隐式的手段指定-->
+<form th:action="@{/employee}" th:object="${employee}" method="post" class="form-horizontal"><!--美化表单，先设置水平-->
+    <!--通过该input hidden，隐式的指明请求的HTTP方法-->
+    <!--这个隐型参数的值put，会覆盖原有的方法请求名-->
+    <input type="hidden" name="_method" value="put">
+
+    <div class="form-group"><!--表单基础样式-->
+        <label class="col-sm-2 control-label">名字:</label>
+        <div class="col-sm-5"><!--设置宽度-->
+            <input type="text" id="name" name="name" th:value="*{name}" readonly><!--选择变量表达式获取名字-->
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">职业:</label>
+        <div class="col-sm-5">
+            <input type="text" id="job" name="job" th:value="*{job}" readonly>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">生日</label>
+        <div class="col-sm-5">
+            <input type="text" id="birthday" name="birthday" th:value="*{birthday}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-2 control-label">性别</label>
+        <div class="col-sm-5">
+            <input type="text" id="sex" name="sex" th:value="*{sex}">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-5 col-sm-offset-2"><!--添加宽度和偏移量-->
+            <input type="submit" value="submit">
+        </div>
+    </div>
+</form>
+</body>
+</html>
