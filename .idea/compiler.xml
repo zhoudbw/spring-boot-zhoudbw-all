@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-boot-zhoudbw-04-orm-jpa" />
         <module name="spring-boot-zhoudbw-06-servlet" />
+        <module name="spring-boot-zhoudbw-06-error-exception" />
         <module name="spring-boot-zhoudbw-06-logging" />
         <module name="spring-boot-zhoudbw-02-configuration" />
         <module name="spring-boot-zhoudbw-04-restful" />
@@ -15,12 +16,12 @@
         <module name="spring-boot-zhoudbw-04-mybatis-plus" />
         <module name="spring-boot-zhoudbw-05-event-listener" />
         <module name="spring-boot-zhoudbw-03-template" />
+        <module name="spring-boot-zhoudbw-08-actuator" />
         <module name="spring-boot-zhoudbw-03-thymeleaf-crud" />
         <module name="spring-boot-zhoudbw-05-web-war" />
-        <module name="spring-boot-zhoudbw-01-helloworld" />
         <module name="spring-boot-zhoudbw-04-orm-mybatis" />
         <module name="spring-boot-zhoudbw-06-swagger" />
-        <module name="spring-boot-zhoudbw-06-error-exception" />
+        <module name="spring-boot-zhoudbw-01-helloworld" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -39,6 +40,7 @@
       <module name="spring-boot-zhoudbw-06-logging" target="1.8" />
       <module name="spring-boot-zhoudbw-06-servlet" target="1.8" />
       <module name="spring-boot-zhoudbw-06-swagger" target="1.8" />
+      <module name="spring-boot-zhoudbw-08-actuator" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -58,6 +60,7 @@
       <module name="spring-boot-zhoudbw-06-logging" options="-parameters" />
       <module name="spring-boot-zhoudbw-06-servlet" options="-parameters" />
       <module name="spring-boot-zhoudbw-06-swagger" options="-parameters" />
+      <module name="spring-boot-zhoudbw-08-actuator" options="-parameters" />
     </option>
   </component>
 </project>

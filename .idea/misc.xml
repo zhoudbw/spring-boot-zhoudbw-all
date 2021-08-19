@@ -24,6 +24,7 @@
         <option value="$PROJECT_DIR$/spring-boot-zhoudbw-06-logging/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-zhoudbw-06-servlet/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-zhoudbw-06-swagger/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-zhoudbw-08-actuator/pom.xml" />
       </list>
     </option>
   </component>
