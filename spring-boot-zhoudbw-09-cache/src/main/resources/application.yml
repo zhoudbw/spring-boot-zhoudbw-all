@@ -1,0 +1,5 @@
+# \u5C06mapper\u7684\u65E5\u5FD7\u6253\u5370\u7684\u6E05\u695A\u4E00\u70B9\uFF0C\u628Asql\u4E5F\u6253\u5370\u51FA\u6765
+logging:
+  level:
+    cn:
+      zhoudbw: trace

@@ -17,5 +17,6 @@
     <file url="file://$PROJECT_DIR$/spring-boot-zhoudbw-06-servlet/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-zhoudbw-06-swagger/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-zhoudbw-08-actuator/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-zhoudbw-09-cache/src/main/java" charset="UTF-8" />
   </component>
 </project>
