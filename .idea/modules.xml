@@ -19,6 +19,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-boot-zhoudbw-06-swagger/spring-boot-zhoudbw-06-swagger.iml" filepath="$PROJECT_DIR$/spring-boot-zhoudbw-06-swagger/spring-boot-zhoudbw-06-swagger.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-zhoudbw-08-actuator/spring-boot-zhoudbw-08-actuator.iml" filepath="$PROJECT_DIR$/spring-boot-zhoudbw-08-actuator/spring-boot-zhoudbw-08-actuator.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-zhoudbw-09-cache/spring-boot-zhoudbw-09-cache.iml" filepath="$PROJECT_DIR$/spring-boot-zhoudbw-09-cache/spring-boot-zhoudbw-09-cache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-zhoudbw-10-future/spring-boot-zhoudbw-10-future.iml" filepath="$PROJECT_DIR$/spring-boot-zhoudbw-10-future/spring-boot-zhoudbw-10-future.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/spring-boot-zhoudbw-all.iml" filepath="$PROJECT_DIR$/.idea/spring-boot-zhoudbw-all.iml" />
     </modules>
   </component>
